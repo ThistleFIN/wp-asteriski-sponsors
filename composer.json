@@ -1,0 +1,21 @@
+{
+	"name": "htmlburger/carbon-fields-plugin",
+	"description": "WordPress plugin loader for Carbon Fields.",
+	"license": "GPL-2.0-or-later",
+	"type": "wordpress-plugin",
+	"homepage": "https://takiainen.fi",
+	"authors": [
+		{
+			"name": "Roosa Virta",
+			"email": "roosa@takiainen.fi"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Carbon_Fields_Plugin\\": "core/"
+		}
+	},
+    "require": {
+        "htmlburger/carbon-fields": "^3.6"
+    }
+}

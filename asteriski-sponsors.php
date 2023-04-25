@@ -24,6 +24,7 @@ function asteriski_sponsors_boot_plugin(): void
 {
 	if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 		require __DIR__ . '/vendor/autoload.php';
+		\Carbon_Fields\Carbon_Fields::boot();
 	}
 
 	if ( class_exists( 'Carbon_Fields\Container' ) ) {
@@ -48,8 +49,15 @@ function asteriski_sponsors_block_init(): void
 		true
 	);
 
-	wp_enqueue_script( 'takiainen-asteriski-sponsors' );
+	wp_register_style(
+		'takiainen-asteriski-sponsors',
+		plugins_url( 'build/style-index.css', __FILE__ ),
+		false,
+		$asset_file['version']
+	);
 
+	wp_enqueue_script( 'takiainen-asteriski-sponsors' );
+	wp_enqueue_style('takiainen-asteriski-sponsors');
 	register_block_type(
 		'takiainen/asteriski-sponsors',
 		array(
@@ -67,6 +75,9 @@ add_action( 'init', 'asteriski_sponsors_block_init' );
  */
 function asteriski_sponsor_block(): string
 {
+	if(!function_exists('carbon_get_theme_option')) {
+		require_once __DIR__ . '/vendor/htmlburger/carbon-fields/core/functions.php';
+	}
 	ob_start();
 	include __DIR__ . '/sponsors.php';
 

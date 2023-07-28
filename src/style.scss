@@ -1,9 +1,26 @@
 .sponsors-block {
 	text-align: center;
-	margin: 2rem;
+	margin: 2rem auto;
+	max-width: 1400px;
+	padding: 2rem;
 
+	.main-sponsor.sponsor {
+		margin-bottom: 3rem;
+		img {
+			width: 90%;
+			height: auto;
+		}
+	}
+	.sponsor:not(.main-sponsor) {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
 	.sponsors {
-		max-width: 1400px;
+		max-width: 1200px;
+		justify-content: center;
+		text-align: center;
 		margin: 0 auto;
 		display: grid;
 		gap: 2rem;
@@ -11,10 +28,13 @@
 		align-items: center;
 		justify-items: center;
 
-		.sponsor a {
-			height: 100%;
+		.sponsor {
 			width: 100%;
-			display: inline-block;
+			a {
+				height: 100%;
+				width: 100%;
+				display: inline-block;
+			}
 		}
 	}
 }

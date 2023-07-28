@@ -14,6 +14,8 @@ function asteriski_sponsor_options(): void
 {
 	// Add second options page under 'Basic Options'.
 	Container::make( 'theme_options', __( 'Sponsors', 'asteriski-sponsors' ) )
+		     ->set_icon( 'dashicons-carrot' )
+			 ->set_page_menu_position( 10 )
 			 ->set_page_file( 'sponsor-options' )
 			 ->add_fields(
 				 array(

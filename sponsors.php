@@ -30,7 +30,7 @@ shuffle($sponsors);
 			<div class="sponsor">
 				<a href="<?php echo esc_url($sponsor['sponsor_link']); ?>" target="_blank">
 					<?php echo wp_get_attachment_image($sponsor['sponsor_image'], 'full', '', array(
-						'class' => 'main-sponsor',
+						'class' => '',
 						'title' => esc_attr($sponsor['sponsor_name']),
 						'alt' => sprintf(__('Logo of a sponsor. Sponsor is %s.', 'asteriski-sponsors'), esc_attr($sponsor['sponsor_name'])),
 					)); ?>

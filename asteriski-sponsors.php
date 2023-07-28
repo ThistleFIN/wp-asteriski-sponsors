@@ -65,9 +65,15 @@ function asteriski_sponsors_block_init(): void
 			'render_callback' => 'asteriski_sponsor_block',
 		)
 	);
+
 }
 add_action( 'init', 'asteriski_sponsors_block_init' );
 
+add_action( 'plugins_loaded', 'sponsors_load_plugin_textdomain' );
+
+function sponsors_load_plugin_textdomain() {
+	load_plugin_textdomain( 'asteriski-sponsors', false, 'asteriski-sponsors/languages');
+}
 /**
  * Renders the block.
  *

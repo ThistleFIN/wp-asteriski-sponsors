@@ -2,31 +2,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sponsors block for Asteriski ry\n"
 "POT-Creation-Date: 2023-04-22 09:26+0300\n"
-"PO-Revision-Date: 2023-04-22 09:27+0300\n"
-"Last-Translator: Roosa Virta"
-"Language-Team: Takiainen"
+"PO-Revision-Date: 2023-07-28 14:35+0300\n"
+"Last-Translator: Roosa VirtaLanguage-Team: TakiainenLanguage: fi\n"
+"Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.1\n"
 
 #: block-options-page.php:16
 msgid "Sponsors"
 msgstr "Sponsorit"
 
 #: block-options-page.php:20
-#, fuzzy
 msgid "Main Sponsor Name"
 msgstr "Pääsponsorin nimi"
 
 #: block-options-page.php:21
-#, fuzzy
 msgid "Main Sponsor Website"
 msgstr "Pääsponsorin verkkosivusto"
 
 #: block-options-page.php:22
-#, fuzzy
 msgid "Main Sponsor Logo"
 msgstr "Pääsponsorin logo"
 
@@ -39,7 +37,6 @@ msgid "Sponsor Name"
 msgstr "Sponsorin nimi"
 
 #: block-options-page.php:27
-#, fuzzy
 msgid "Sponsor Website"
 msgstr "Sponsorin verkkosivusto"
 
@@ -48,35 +45,30 @@ msgid "Sponsor Logo"
 msgstr "Sponsorin logo"
 
 #: sponsors.php:35
-#, fuzzy, php-format
+#, php-format
 msgid "Logo of a sponsor. Sponsor is %s."
 msgstr "Sponsorin logo. Sponsori on %s."
 
 #: src/edit.js:10
-#, fuzzy
 msgid "Sponsors are rendered in frontend."
 msgstr "Sponsorit renderöidään frontendissä."
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "Sponsors block for Asteriski ry"
 msgstr "Asteriski ry:n sponsorilohko"
 
 #. Plugin URI of the plugin/theme
-#, fuzzy
 msgid "https://takiainen.fi"
 msgstr "https://takiainen.fi"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid ""
 "Simple block adding options page for easy addition of sponsors and a block "
 "for displaying them."
 msgstr ""
-"Yksinkertainen lohkon lisäysvaihtoehtosivu, jolla sponsorit ja lohko "
-"niiden näyttämiseen voidaan helposti lisätä."
+"Yksinkertainen lohko, johon saa helposti lisättyä sponsoreita ja jolla "
+"sponsorit voidaan helposti näyttää käyttäjälle."
 
 #. Author of the plugin/theme
-#, fuzzy
 msgid "Roosa Virta"
 msgstr "Roosa Virta"
